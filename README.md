@@ -1,40 +1,50 @@
-**Library Management System README**
+# 📚 Library Management System – Java Console App
 
-**Overview**
-The Library Management System (LMS) is a user-friendly application designed to facilitate the management of books and members within a library. While the system does not allow users to add new books or search for specific titles, it provides essential functionalities such as browsing books, borrowing, returning, viewing borrowed books, and logging out.
+## 🔍 Overview
+The **Library Management System** is a simple, console-based Java application that allows users to manage books and members. Users can add books and members (students or staff), borrow and return books, and track borrowed items.
 
-**Features**
-- **Book Management**: Browse available books in the library.
-- **Book Checkout System**: Borrow books that are available for checkout and return them when finished.
-- **View Borrowed Books**: See a list of books currently borrowed by the user.
-- **Member Management**: Register new members with their name and email.
+## ✨ Features
+- **Add Users**: Register students and staff members.
+- **Add Books**: Input book title and author to grow the library catalog.
+- **Borrow Books**: Users can borrow available books.
+- **Return Books**: Users can return previously borrowed books.
+- **Console Menu Interface**: Easy-to-navigate text-based system.
 
-**Implementation Details**
-- **User Interface**: The system utilizes a simple text-based menu interface for easy navigation.
-- **Exception Handling**: Utilizes exceptions to handle errors gracefully, ensuring smooth operation and preventing program crashes.
-- **Assertions and Input Validation**: Validates user inputs and ensures the integrity of the system.
-- **Collections and Generics**: Utilizes collections to manage books and members, ensuring type safety.
+## 🛠 Implementation Details
+- **Object-Oriented Design**: Uses `Book`, `User`, `Student`, `Staff`, and `LibraryManager` classes.
+- **Collections**: Uses `ArrayList` for managing books and user data.
+- **Input Validation**: Prompts for meaningful input and handles errors smoothly.
+- **Encapsulation**: Proper class design with clearly defined responsibilities.
 
-**How to Use**
-**Installation:**
-1. Download the source code from the GitHub repository.
-2. Compile the code using a Java compiler.
-3. Run the main Java file (LibraryManagementSystem.java).
+## 🚀 How to Use
 
-**Usage:**
-1. Follow the on-screen instructions to browse books, borrow or return books, view borrowed books, and logout when done.
+### 📥 Installation
+1. Download or clone the project.
+2. Open it in your Java IDE (e.g., NetBeans or IntelliJ).
+3. Ensure your file is named `LibrarySystemFinal.java` and is in the correct package: `com.mycompany.librarysystemfinal`.
+4. Run the `main` method.
 
-**Error Handling**
-The Library Management System is equipped with robust error handling mechanisms:
-- **Exception Handling**: Utilizes try-catch blocks to handle exceptions gracefully, providing informative error messages to the user in case of errors.
-- **Input Validation**: Validates user inputs to prevent invalid data entry, ensuring the smooth operation of the system.
-- **Assertions**: Employs assertions to validate the state of the program, ensuring that critical conditions are met during execution.
+### ▶️ Running the Program
+1. Upon running, you'll see a menu:
+   - Add Student
+   - Add Staff
+   - Add Book
+   - Borrow Book
+   - Return Book
+   - Exit
+2. Follow prompts to interact with the system.
 
-**Conclusion**
-The Library Management System provides a convenient solution for managing books and members in a library setting. While it offers essential functionalities, it may require additional features like book addition and search capabilities for broader use cases.
+---
 
-**Deployment**
-To deploy the Library Management System:
-1. Clone or download the source code from the GitHub repository.
-2. Compile the code using a Java compiler.
-3. Run the main Java file (LibraryManagementSystem.java) to start the program.
+### 💡 Sample Use
+
+```text
+Welcome to the Library System!
+
+1. Add Student
+2. Add Staff
+3. Add Book
+4. Borrow Book
+5. Return Book
+6. Exit
+Choose an option:
